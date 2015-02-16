@@ -7,15 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CDAC344DA553352567E0A54 /* libPods-AskMe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC0CD868DE0C4F5CF892120 /* libPods-AskMe.a */; };
+		FB87974E1A8C718B00B0788B /* youtube.png in Resources */ = {isa = PBXBuildFile; fileRef = FB8797491A8C718B00B0788B /* youtube.png */; };
+		FB87974F1A8C718B00B0788B /* soundcloud.png in Resources */ = {isa = PBXBuildFile; fileRef = FB87974A1A8C718B00B0788B /* soundcloud.png */; };
+		FB8797501A8C718B00B0788B /* message.png in Resources */ = {isa = PBXBuildFile; fileRef = FB87974B1A8C718B00B0788B /* message.png */; };
+		FB8797511A8C718B00B0788B /* Office365.png in Resources */ = {isa = PBXBuildFile; fileRef = FB87974C1A8C718B00B0788B /* Office365.png */; };
+		FB8797521A8C718B00B0788B /* dropbox.png in Resources */ = {isa = PBXBuildFile; fileRef = FB87974D1A8C718B00B0788B /* dropbox.png */; };
+		FB8797561A8DE26100B0788B /* Delete.png in Resources */ = {isa = PBXBuildFile; fileRef = FB8797551A8DE26100B0788B /* Delete.png */; };
+		FB87975A1A8DE54600B0788B /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = FB8797591A8DE54600B0788B /* checkmark.png */; };
 		FBD608301A89F61700F62062 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD6082F1A89F61700F62062 /* main.m */; };
 		FBD608331A89F61700F62062 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD608321A89F61700F62062 /* AppDelegate.m */; };
 		FBD608361A89F61700F62062 /* AskMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBD608341A89F61700F62062 /* AskMe.xcdatamodeld */; };
-		FBD608391A89F61700F62062 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD608381A89F61700F62062 /* MasterViewController.m */; };
-		FBD6083C1A89F61700F62062 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD6083B1A89F61700F62062 /* DetailViewController.m */; };
-		FBD6083F1A89F61700F62062 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD6083D1A89F61700F62062 /* Main.storyboard */; };
 		FBD608411A89F61700F62062 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD608401A89F61700F62062 /* Images.xcassets */; };
 		FBD608441A89F61700F62062 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBD608421A89F61700F62062 /* LaunchScreen.xib */; };
 		FBD608501A89F61700F62062 /* AskMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD6084F1A89F61700F62062 /* AskMeTests.m */; };
+		FBD6085C1A89F67B00F62062 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD6085A1A89F67B00F62062 /* Storyboard.storyboard */; };
+		FBD608671A89F69000F62062 /* RKSwipeBetweenViewControllers.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD6085E1A89F69000F62062 /* RKSwipeBetweenViewControllers.m */; };
+		FBD608681A89F69000F62062 /* RWTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD608601A89F69000F62062 /* RWTableViewController.m */; };
+		FBD608691A89F69000F62062 /* RWBasicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD608621A89F69000F62062 /* RWBasicTableViewCell.m */; };
+		FBD6086A1A89F69000F62062 /* UIAlertView+RWBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD608641A89F69000F62062 /* UIAlertView+RWBlock.m */; };
+		FBD6086B1A89F69000F62062 /* BrandonText-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FBD608651A89F69000F62062 /* BrandonText-Regular.otf */; };
+		FBD6086C1A89F69000F62062 /* BrandonText-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = FBD608661A89F69000F62062 /* BrandonText-ThinItalic.otf */; };
+		FBD6086E1A89F69600F62062 /* ronakprofile.png in Resources */ = {isa = PBXBuildFile; fileRef = FBD6086D1A89F69600F62062 /* ronakprofile.png */; };
+		FBD608701A89F99E00F62062 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD6086F1A89F99E00F62062 /* Main.storyboard */; };
+		FBD608721A89FA5B00F62062 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBD608711A89FA5B00F62062 /* UIKit.framework */; };
+		FBD608741A89FA6400F62062 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBD608731A89FA6400F62062 /* CoreGraphics.framework */; };
+		FBD608761A89FA7100F62062 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBD608751A89FA7100F62062 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,22 +46,43 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6AC0CD868DE0C4F5CF892120 /* libPods-AskMe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AskMe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A13069D3EB2885BD6AE3B1F9 /* Pods-AskMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AskMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-AskMe/Pods-AskMe.release.xcconfig"; sourceTree = "<group>"; };
+		D2D49588FC8E5C6BEED3CCE3 /* Pods-AskMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AskMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AskMe/Pods-AskMe.debug.xcconfig"; sourceTree = "<group>"; };
+		FB8797491A8C718B00B0788B /* youtube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = youtube.png; sourceTree = "<group>"; };
+		FB87974A1A8C718B00B0788B /* soundcloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = soundcloud.png; sourceTree = "<group>"; };
+		FB87974B1A8C718B00B0788B /* message.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = message.png; sourceTree = "<group>"; };
+		FB87974C1A8C718B00B0788B /* Office365.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Office365.png; sourceTree = "<group>"; };
+		FB87974D1A8C718B00B0788B /* dropbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dropbox.png; sourceTree = "<group>"; };
+		FB8797551A8DE26100B0788B /* Delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Delete.png; sourceTree = "<group>"; };
+		FB8797591A8DE54600B0788B /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark.png; sourceTree = "<group>"; };
 		FBD6082A1A89F61700F62062 /* AskMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AskMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD6082E1A89F61700F62062 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBD6082F1A89F61700F62062 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FBD608311A89F61700F62062 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FBD608321A89F61700F62062 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FBD608351A89F61700F62062 /* AskMe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AskMe.xcdatamodel; sourceTree = "<group>"; };
-		FBD608371A89F61700F62062 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		FBD608381A89F61700F62062 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		FBD6083A1A89F61700F62062 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		FBD6083B1A89F61700F62062 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		FBD6083E1A89F61700F62062 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FBD608401A89F61700F62062 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FBD608431A89F61700F62062 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FBD608491A89F61700F62062 /* AskMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AskMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD6084E1A89F61700F62062 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBD6084F1A89F61700F62062 /* AskMeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AskMeTests.m; sourceTree = "<group>"; };
+		FBD6085A1A89F67B00F62062 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		FBD6085D1A89F69000F62062 /* RKSwipeBetweenViewControllers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RKSwipeBetweenViewControllers.h; path = ../RKSwipeBetweenViewControllers.h; sourceTree = "<group>"; };
+		FBD6085E1A89F69000F62062 /* RKSwipeBetweenViewControllers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RKSwipeBetweenViewControllers.m; path = ../RKSwipeBetweenViewControllers.m; sourceTree = "<group>"; };
+		FBD6085F1A89F69000F62062 /* RWTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWTableViewController.h; path = ../RWTableViewController.h; sourceTree = "<group>"; };
+		FBD608601A89F69000F62062 /* RWTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RWTableViewController.m; path = ../RWTableViewController.m; sourceTree = "<group>"; };
+		FBD608611A89F69000F62062 /* RWBasicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWBasicTableViewCell.h; path = ../RWBasicTableViewCell.h; sourceTree = "<group>"; };
+		FBD608621A89F69000F62062 /* RWBasicTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RWBasicTableViewCell.m; path = ../RWBasicTableViewCell.m; sourceTree = "<group>"; };
+		FBD608631A89F69000F62062 /* UIAlertView+RWBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+RWBlock.h"; path = "../UIAlertView+RWBlock.h"; sourceTree = "<group>"; };
+		FBD608641A89F69000F62062 /* UIAlertView+RWBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+RWBlock.m"; path = "../UIAlertView+RWBlock.m"; sourceTree = "<group>"; };
+		FBD608651A89F69000F62062 /* BrandonText-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BrandonText-Regular.otf"; sourceTree = "<group>"; };
+		FBD608661A89F69000F62062 /* BrandonText-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BrandonText-ThinItalic.otf"; sourceTree = "<group>"; };
+		FBD6086D1A89F69600F62062 /* ronakprofile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ronakprofile.png; sourceTree = "<group>"; };
+		FBD6086F1A89F99E00F62062 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FBD608711A89FA5B00F62062 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FBD608731A89FA6400F62062 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FBD608751A89FA7100F62062 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +90,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD608761A89FA7100F62062 /* Foundation.framework in Frameworks */,
+				FBD608741A89FA6400F62062 /* CoreGraphics.framework in Frameworks */,
+				FBD608721A89FA5B00F62062 /* UIKit.framework in Frameworks */,
+				4CDAC344DA553352567E0A54 /* libPods-AskMe.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,12 +107,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58D783C87A61239F93EB172B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AC0CD868DE0C4F5CF892120 /* libPods-AskMe.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFA53BC28E235D5A3E31654B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2D49588FC8E5C6BEED3CCE3 /* Pods-AskMe.debug.xcconfig */,
+				A13069D3EB2885BD6AE3B1F9 /* Pods-AskMe.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FBD608211A89F61700F62062 = {
 			isa = PBXGroup;
 			children = (
+				FBD608751A89FA7100F62062 /* Foundation.framework */,
+				FBD608731A89FA6400F62062 /* CoreGraphics.framework */,
+				FBD608711A89FA5B00F62062 /* UIKit.framework */,
 				FBD6082C1A89F61700F62062 /* AskMe */,
 				FBD6084C1A89F61700F62062 /* AskMeTests */,
 				FBD6082B1A89F61700F62062 /* Products */,
+				FB8797591A8DE54600B0788B /* checkmark.png */,
+				FB8797551A8DE26100B0788B /* Delete.png */,
+				FBD608651A89F69000F62062 /* BrandonText-Regular.otf */,
+				FBD608661A89F69000F62062 /* BrandonText-ThinItalic.otf */,
+				FBD6086D1A89F69600F62062 /* ronakprofile.png */,
+				FB8797491A8C718B00B0788B /* youtube.png */,
+				FB87974A1A8C718B00B0788B /* soundcloud.png */,
+				FB87974B1A8C718B00B0788B /* message.png */,
+				FB87974C1A8C718B00B0788B /* Office365.png */,
+				FB87974D1A8C718B00B0788B /* dropbox.png */,
+				DFA53BC28E235D5A3E31654B /* Pods */,
+				58D783C87A61239F93EB172B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,13 +162,18 @@
 			children = (
 				FBD608311A89F61700F62062 /* AppDelegate.h */,
 				FBD608321A89F61700F62062 /* AppDelegate.m */,
-				FBD608371A89F61700F62062 /* MasterViewController.h */,
-				FBD608381A89F61700F62062 /* MasterViewController.m */,
-				FBD6083A1A89F61700F62062 /* DetailViewController.h */,
-				FBD6083B1A89F61700F62062 /* DetailViewController.m */,
-				FBD6083D1A89F61700F62062 /* Main.storyboard */,
+				FBD6085D1A89F69000F62062 /* RKSwipeBetweenViewControllers.h */,
+				FBD6085E1A89F69000F62062 /* RKSwipeBetweenViewControllers.m */,
+				FBD6085F1A89F69000F62062 /* RWTableViewController.h */,
+				FBD608601A89F69000F62062 /* RWTableViewController.m */,
+				FBD608611A89F69000F62062 /* RWBasicTableViewCell.h */,
+				FBD608621A89F69000F62062 /* RWBasicTableViewCell.m */,
+				FBD608631A89F69000F62062 /* UIAlertView+RWBlock.h */,
+				FBD608641A89F69000F62062 /* UIAlertView+RWBlock.m */,
 				FBD608401A89F61700F62062 /* Images.xcassets */,
 				FBD608421A89F61700F62062 /* LaunchScreen.xib */,
+				FBD6085A1A89F67B00F62062 /* Storyboard.storyboard */,
+				FBD6086F1A89F99E00F62062 /* Main.storyboard */,
 				FBD608341A89F61700F62062 /* AskMe.xcdatamodeld */,
 				FBD6082D1A89F61700F62062 /* Supporting Files */,
 			);
@@ -134,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBD608531A89F61700F62062 /* Build configuration list for PBXNativeTarget "AskMe" */;
 			buildPhases = (
+				A696FBFBD65D9A00372314C9 /* Check Pods Manifest.lock */,
 				FBD608261A89F61700F62062 /* Sources */,
 				FBD608271A89F61700F62062 /* Frameworks */,
 				FBD608281A89F61700F62062 /* Resources */,
+				8189A2D22AA401B4A9237F57 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,9 +288,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBD6083F1A89F61700F62062 /* Main.storyboard in Resources */,
+				FB87974E1A8C718B00B0788B /* youtube.png in Resources */,
+				FBD608701A89F99E00F62062 /* Main.storyboard in Resources */,
+				FB8797501A8C718B00B0788B /* message.png in Resources */,
+				FB87975A1A8DE54600B0788B /* checkmark.png in Resources */,
 				FBD608441A89F61700F62062 /* LaunchScreen.xib in Resources */,
+				FBD6086B1A89F69000F62062 /* BrandonText-Regular.otf in Resources */,
+				FB8797561A8DE26100B0788B /* Delete.png in Resources */,
+				FBD6086C1A89F69000F62062 /* BrandonText-ThinItalic.otf in Resources */,
 				FBD608411A89F61700F62062 /* Images.xcassets in Resources */,
+				FB87974F1A8C718B00B0788B /* soundcloud.png in Resources */,
+				FB8797521A8C718B00B0788B /* dropbox.png in Resources */,
+				FBD6085C1A89F67B00F62062 /* Storyboard.storyboard in Resources */,
+				FB8797511A8C718B00B0788B /* Office365.png in Resources */,
+				FBD6086E1A89F69600F62062 /* ronakprofile.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,16 +314,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8189A2D22AA401B4A9237F57 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AskMe/Pods-AskMe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A696FBFBD65D9A00372314C9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FBD608261A89F61700F62062 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBD6083C1A89F61700F62062 /* DetailViewController.m in Sources */,
-				FBD608391A89F61700F62062 /* MasterViewController.m in Sources */,
+				FBD608681A89F69000F62062 /* RWTableViewController.m in Sources */,
 				FBD608361A89F61700F62062 /* AskMe.xcdatamodeld in Sources */,
+				FBD608671A89F69000F62062 /* RKSwipeBetweenViewControllers.m in Sources */,
 				FBD608331A89F61700F62062 /* AppDelegate.m in Sources */,
 				FBD608301A89F61700F62062 /* main.m in Sources */,
+				FBD6086A1A89F69000F62062 /* UIAlertView+RWBlock.m in Sources */,
+				FBD608691A89F69000F62062 /* RWBasicTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,14 +381,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FBD6083D1A89F61700F62062 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FBD6083E1A89F61700F62062 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FBD608421A89F61700F62062 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -353,21 +472,27 @@
 		};
 		FBD608541A89F61700F62062 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2D49588FC8E5C6BEED3CCE3 /* Pods-AskMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AskMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		FBD608551A89F61700F62062 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A13069D3EB2885BD6AE3B1F9 /* Pods-AskMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AskMe/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -424,6 +549,7 @@
 				FBD608551A89F61700F62062 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FBD608561A89F61700F62062 /* Build configuration list for PBXNativeTarget "AskMeTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +558,7 @@
 				FBD608581A89F61700F62062 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

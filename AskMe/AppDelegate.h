@@ -1,25 +1,21 @@
 //
 //  AppDelegate.h
-//  AskMe
+//  RKSwipeBetweenViewControllers
 //
-//  Created by Ronak Trivedi on 2/10/15.
-//  Copyright (c) 2015 RoShow. All rights reserved.
+//  Created by Richard Kim on 7/24/14.
+//  Copyright (c) 2014 Richard Kim. All rights reserved.
 //
 
+/*
+ scrolling too fast is a little janky
+ 
+ */
+
+
 #import <UIKit/UIKit.h>
-#import <CoreData/CoreData.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
-@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
-
-- (void)saveContext;
-- (NSURL *)applicationDocumentsDirectory;
-
-
 @end
-
