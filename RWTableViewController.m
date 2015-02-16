@@ -52,7 +52,7 @@
     UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressGestureRecognized:)];
     [self.tableView addGestureRecognizer:longPress];
     
-   // self.tableView.contentInset = UIEdgeInsetsMake(40, 0, 0, 0);
+    self.tableView.contentInset = UIEdgeInsetsMake(25, 0, 0, 0);
 
   [super viewDidLoad];
 

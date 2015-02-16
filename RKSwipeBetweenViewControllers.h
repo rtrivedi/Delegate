@@ -164,5 +164,7 @@
 @property (nonatomic, strong)UIPageViewController *pageController;
 @property (nonatomic, strong)UIView *navigationView;
 @property (nonatomic, strong)NSArray *buttonText;
+@property (nonatomic, strong)UILabel *appTitle;
+
 
 @end

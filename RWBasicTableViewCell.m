@@ -130,7 +130,7 @@
         _propertyFour.cornerRadius = _propertyFour.frame.size.width / 2;
         _propertyFour.layer.masksToBounds = YES;
         _propertyFour.tapCircleColor = [[UIColor alloc] initWithRed:5/255.0f green:201/255.0f blue:65/255.0f alpha:1.0f];
-
+        
     }
     return self;
 }

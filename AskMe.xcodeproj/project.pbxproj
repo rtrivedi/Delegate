@@ -15,6 +15,7 @@
 		FB8797521A8C718B00B0788B /* dropbox.png in Resources */ = {isa = PBXBuildFile; fileRef = FB87974D1A8C718B00B0788B /* dropbox.png */; };
 		FB8797561A8DE26100B0788B /* Delete.png in Resources */ = {isa = PBXBuildFile; fileRef = FB8797551A8DE26100B0788B /* Delete.png */; };
 		FB87975A1A8DE54600B0788B /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = FB8797591A8DE54600B0788B /* checkmark.png */; };
+		FB87975C1A92B21300B0788B /* BrandonText-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = FB87975B1A92B1F100B0788B /* BrandonText-Thin.otf */; };
 		FBD608301A89F61700F62062 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD6082F1A89F61700F62062 /* main.m */; };
 		FBD608331A89F61700F62062 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD608321A89F61700F62062 /* AppDelegate.m */; };
 		FBD608361A89F61700F62062 /* AskMe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBD608341A89F61700F62062 /* AskMe.xcdatamodeld */; };
@@ -56,6 +57,7 @@
 		FB87974D1A8C718B00B0788B /* dropbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dropbox.png; sourceTree = "<group>"; };
 		FB8797551A8DE26100B0788B /* Delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Delete.png; sourceTree = "<group>"; };
 		FB8797591A8DE54600B0788B /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark.png; sourceTree = "<group>"; };
+		FB87975B1A92B1F100B0788B /* BrandonText-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BrandonText-Thin.otf"; sourceTree = "<group>"; };
 		FBD6082A1A89F61700F62062 /* AskMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AskMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD6082E1A89F61700F62062 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBD6082F1A89F61700F62062 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				FBD6082B1A89F61700F62062 /* Products */,
 				FB8797591A8DE54600B0788B /* checkmark.png */,
 				FB8797551A8DE26100B0788B /* Delete.png */,
+				FB87975B1A92B1F100B0788B /* BrandonText-Thin.otf */,
 				FBD608651A89F69000F62062 /* BrandonText-Regular.otf */,
 				FBD608661A89F69000F62062 /* BrandonText-ThinItalic.otf */,
 				FBD6086D1A89F69600F62062 /* ronakprofile.png */,
@@ -288,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB87975C1A92B21300B0788B /* BrandonText-Thin.otf in Resources */,
 				FB87974E1A8C718B00B0788B /* youtube.png in Resources */,
 				FBD608701A89F99E00F62062 /* Main.storyboard in Resources */,
 				FB8797501A8C718B00B0788B /* message.png in Resources */,

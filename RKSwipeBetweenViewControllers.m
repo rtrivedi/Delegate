@@ -8,7 +8,7 @@
 
 //%%% customizeable selector bar attributes (the black bar under the buttons)
 #define ANIMATION_SPEED 0.2 //%%% the number of seconds it takes to complete the animation
-#define SELECTOR_Y_BUFFER 40 //%%% the y-value of the bar that shows what page you are on (0 is the top)
+#define SELECTOR_Y_BUFFER 69 //%%% the y-value of the bar that shows what page you are on (0 is the top)
 #define SELECTOR_HEIGHT 4 //%%% thickness of the selector bar
 
 #define X_OFFSET 8 //%%% for some reason there's a little bit of a glitchy offset.  I'm going to look for a better workaround in the future
@@ -28,7 +28,7 @@
 @synthesize pageController;
 @synthesize navigationView;
 @synthesize buttonText;
-
+@synthesize appTitle;
 
 - (void)viewDidLoad
 {
@@ -58,6 +58,13 @@
     navigationView = [[UIView alloc]initWithFrame:CGRectMake(0,0,self.view.frame.size.width,self.navigationBar.frame.size.height)];
     navigationView.backgroundColor = [[UIColor alloc] initWithRed:30/255.0f green:170/255.0f blue:241/255.0f alpha:1.0f];
     
+    appTitle = [[UILabel alloc] initWithFrame:CGRectMake(0,0,100,self.navigationBar.frame.size.height)];
+    appTitle.center = self.navigationBar.center;
+    appTitle.text = @"Delegate";
+    appTitle.font = [UIFont fontWithName:@"BrandonText-Thin" size:18];
+    appTitle.textColor = [UIColor whiteColor];
+    [navigationView addSubview: appTitle];
+
     NSInteger numControllers = [viewControllerArray count];
     
     if (!buttonText) {
@@ -66,11 +73,14 @@
     
     for (int i = 0; i<numControllers; i++) {
         
-        UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(X_BUFFER+i*(self.view.frame.size.width-2*X_BUFFER)/numControllers-X_OFFSET, Y_BUFFER, (self.view.frame.size.width-2*X_BUFFER)/numControllers, HEIGHT)];
+//        UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(X_BUFFER+i*(self.view.frame.size.width-2*X_BUFFER)/numControllers-X_OFFSET, 40, (self.view.frame.size.width-2*X_BUFFER)/numControllers, HEIGHT)];
+        
+        UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(i*(self.view.frame.size.width/3) - 8, 43, self.view.frame.size.width/3, HEIGHT)];
+        
         [navigationView addSubview:button];
         
         button.tag = i; //%%% IMPORTANT: if you make your own custom buttons, you have to tag them appropriately
-        button.backgroundColor = [[UIColor alloc] initWithRed:30/255.0f green:170/255.0f blue:241/255.0f alpha:1.0f];//%%% buttoncolors
+        button.backgroundColor = [[UIColor alloc] initWithRed:30/255.0f green:170/255.0f blue:241/255.0f alpha:0.9f];//%%% buttoncolors
         
         [button addTarget:self action:@selector(tapSegmentButtonAction:) forControlEvents:UIControlEventTouchUpInside];
         
@@ -242,7 +252,6 @@
     //i.e. if you're on the second page, it makes sure that the bar starts from the frame.origin.x of the
     //second tab instead of the beginning
     NSInteger xCoor = X_BUFFER+selectionBar.frame.size.width*currentPageIndex-X_OFFSET;
-    
     selectionBar.frame = CGRectMake(xCoor-xFromCenter/[viewControllerArray count], selectionBar.frame.origin.y, selectionBar.frame.size.width, selectionBar.frame.size.height);
 }
 
@@ -251,8 +260,6 @@
 //%%%%%%%%%%%%%%%         MOVEMENT         %%%%%%%%%%%%%//
 //%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%//
 //////////////////////////////////////////////////////////
-
-
 
 
 //%%% the delegate functions for UIPageViewController.

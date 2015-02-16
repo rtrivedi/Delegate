@@ -24,15 +24,16 @@
     RKSwipeBetweenViewControllers *navigationController = [[RKSwipeBetweenViewControllers alloc]initWithRootViewController:pageController];
     
     //%%% DEMO CONTROLLERS
-    UIViewController *demo = [[UIViewController alloc]init];
+    RWTableViewController *demo = [[RWTableViewController alloc]init];
+    //UIViewController *demo = [[UIViewController alloc]init];
     UIViewController *demo2 = [[UIViewController alloc]init];
     UIViewController *demo3 = [[UIViewController alloc]init];
-    RWTableViewController *demo4 = [[RWTableViewController alloc]init];
+    //RWTableViewController *demo4 = [[RWTableViewController alloc]init];
     
     demo.view.backgroundColor = [UIColor whiteColor];
     demo2.view.backgroundColor = [UIColor whiteColor];
     demo3.view.backgroundColor = [UIColor whiteColor];
-    [navigationController.viewControllerArray addObjectsFromArray:@[demo,demo2,demo4]];
+    [navigationController.viewControllerArray addObjectsFromArray:@[demo,demo2,demo3]];
     
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
