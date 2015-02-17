@@ -85,7 +85,7 @@
         [button addTarget:self action:@selector(tapSegmentButtonAction:) forControlEvents:UIControlEventTouchUpInside];
         
         [button setTitle:[buttonText objectAtIndex:i] forState:UIControlStateNormal]; //%%%buttontitle
-        button.titleLabel.font = [UIFont fontWithName:@"BrandonText-Regular" size:18];
+        button.titleLabel.font = [UIFont fontWithName:@"BrandonText-Regular" size:16];
         
     }
     pageController.navigationController.navigationBar.topItem.titleView = navigationView;
