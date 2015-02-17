@@ -130,14 +130,14 @@
   
   // Update cell content from data source.
     NSString *object = [_objects objectAtIndex:indexPath.row];
+    NSString *reminderString = @"12:54am";
     NSString *appendedObject = [object stringByAppendingString:@"\n"];
-    appendedObject = [appendedObject stringByAppendingString:@"12:54am"];
+    appendedObject = [appendedObject stringByAppendingString:reminderString];
     [cell.taskName setText:appendedObject];
     
     NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:appendedObject];
-    //[str addAttribute:NSFontAttributeName value:italicFont range:NSMakeRange(object.length, object.length+1)];
+    [str addAttribute:NSFontAttributeName value:italicFont range:NSMakeRange(object.length+1, reminderString.length)];
     cell.taskName.attributedText = str;
-    
     [cell.taskName sizeToFit];
   
   return cell;
@@ -147,8 +147,8 @@
     
     UIColor *customRed = [[UIColor alloc] initWithRed:250/255.0f green:92/255.0f blue:109/255.0f alpha:1.0f];
     
-    int startRange = 5;
-    int endRange = 10;
+    int startRange = 0;
+    int endRange = 0;
     
     NSString *task = taskDescription;
     NSString *spacing = @"\n";
