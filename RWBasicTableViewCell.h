@@ -25,6 +25,4 @@
 @property (retain, nonatomic) BFPaperButton *bumps;
 @property (retain, nonatomic) UILabel *bumpCount;
 
-
-
 @end

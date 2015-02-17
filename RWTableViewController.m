@@ -122,7 +122,6 @@
     RWBasicTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kIdentifier];
 
     if (cell == nil) {
-        
         cell = [[RWBasicTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kIdentifier];
     }
     
@@ -131,11 +130,43 @@
   
   // Update cell content from data source.
     NSString *object = [_objects objectAtIndex:indexPath.row];
-    [cell.taskName setText:object];
-    [cell.taskName sizeToFit];
+    NSString *appendedObject = [object stringByAppendingString:@"\n"];
+    appendedObject = [appendedObject stringByAppendingString:@"12:54am"];
+    [cell.taskName setText:appendedObject];
     
+    NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:appendedObject];
+    //[str addAttribute:NSFontAttributeName value:italicFont range:NSMakeRange(object.length, object.length+1)];
+    cell.taskName.attributedText = str;
+    
+    [cell.taskName sizeToFit];
   
   return cell;
+}
+
+- (NSMutableAttributedString*)appendReminderToString: (NSMutableAttributedString *)taskDescription {
+    
+    UIColor *customRed = [[UIColor alloc] initWithRed:250/255.0f green:92/255.0f blue:109/255.0f alpha:1.0f];
+    
+    int startRange = 5;
+    int endRange = 10;
+    
+    NSString *task = taskDescription;
+    NSString *spacing = @"\n";
+    NSString *reminderString = @"12:54am";
+    NSString *s;
+    
+    s = [s stringByAppendingString:task];
+    s = [s stringByAppendingString:spacing];
+    s = [s stringByAppendingString:reminderString];
+
+    //startRange = task.length;
+    //endRange = task.length + reminderString.length;
+
+    NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString: s];
+    [text addAttribute:NSForegroundColorAttributeName
+                 value:customRed
+                 range:NSMakeRange(startRange, endRange)];
+    return text;
 }
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
