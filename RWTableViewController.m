@@ -143,31 +143,6 @@
   return cell;
 }
 
-- (NSMutableAttributedString*)appendReminderToString: (NSMutableAttributedString *)taskDescription {
-    
-    UIColor *customRed = [[UIColor alloc] initWithRed:250/255.0f green:92/255.0f blue:109/255.0f alpha:1.0f];
-    
-    int startRange = 0;
-    int endRange = 0;
-    
-    NSString *task = taskDescription;
-    NSString *spacing = @"\n";
-    NSString *reminderString = @"12:54am";
-    NSString *s;
-    
-    s = [s stringByAppendingString:task];
-    s = [s stringByAppendingString:spacing];
-    s = [s stringByAppendingString:reminderString];
-
-    //startRange = task.length;
-    //endRange = task.length + reminderString.length;
-
-    NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString: s];
-    [text addAttribute:NSForegroundColorAttributeName
-                 value:customRed
-                 range:NSMakeRange(startRange, endRange)];
-    return text;
-}
 
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
   return YES;

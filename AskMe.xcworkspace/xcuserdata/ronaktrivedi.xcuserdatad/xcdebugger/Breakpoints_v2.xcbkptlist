@@ -109,9 +109,9 @@
             timestampString = "445844541.100355"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "152"
-            endingLineNumber = "152"
-            landmarkName = "-appendReminderToString:"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -121,13 +121,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "RWTableViewController.m"
-            timestampString = "445844541.100355"
+            filePath = "RKSwipeBetweenViewControllers.m"
+            timestampString = "445936319.397146"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
-            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            startingLineNumber = "205"
+            endingLineNumber = "205"
+            landmarkName = "-tapSegmentButtonAction:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
