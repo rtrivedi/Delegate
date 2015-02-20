@@ -57,7 +57,6 @@
 {
     navigationView = [[UIView alloc]initWithFrame:CGRectMake(0,0,self.view.frame.size.width,self.navigationBar.frame.size.height)];
     navigationView.backgroundColor = [[UIColor alloc] initWithRed:30/255.0f green:170/255.0f blue:241/255.0f alpha:1.0f];
-    navigationView.userInteractionEnabled = YES;
     
     appTitle = [[UILabel alloc] initWithFrame:CGRectMake(0,0,100,self.navigationBar.frame.size.height)];
     appTitle.center = self.navigationBar.center;

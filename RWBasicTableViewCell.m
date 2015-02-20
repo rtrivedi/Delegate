@@ -106,7 +106,7 @@
     _senderThumbnail.image = [UIImage imageNamed: @"ronakprofile.png"];
     _senderThumbnail.center = CGPointMake(firstThird.center.x, firstThird.frame.origin.y + 30);
     
-    [_taskName setFrame:CGRectMake(Middle.frame.origin.x, Middle.frame.origin.y-8, Middle.frame.size.width, Middle.frame.size.height*0.5)];
+    [_taskName setFrame:CGRectMake(Middle.frame.origin.x, Middle.frame.origin.y-10, Middle.frame.size.width, Middle.frame.size.height*0.5)];
     _donePaperButton.center = CGPointMake(Third.center.x, _senderThumbnail.center.y);
     
     _propertyOne.center = CGPointMake(_taskName.frame.origin.x+22.5, _senderThumbnail.center.y + _taskName.frame.size.height);
