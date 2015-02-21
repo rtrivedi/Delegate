@@ -12,6 +12,9 @@
 
 #import "RWTableViewController.h"
 
+#import <Parse/Parse.h>
+
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -19,16 +22,22 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
     
+    [Parse enableLocalDatastore];
+    
+    // Initialize Parse.
+    [Parse setApplicationId:@"yy5DNSYAiwWGWeNZl0ptKDY1VQnin13IhXSwlQ4F"
+                  clientKey:@"jcBDUeZqJ5e7Df5h7frtMJE2S5EiHqNJISPxOH23"];
+    
+    // [Optional] Track statistics around application opens.
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
     UIPageViewController *pageController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal options:nil];
     
     RKSwipeBetweenViewControllers *navigationController = [[RKSwipeBetweenViewControllers alloc]initWithRootViewController:pageController];
     
-    //%%% DEMO CONTROLLERS
     RWTableViewController *demo = [[RWTableViewController alloc]init];
-    //UIViewController *demo = [[UIViewController alloc]init];
     UIViewController *demo2 = [[UIViewController alloc]init];
     UIViewController *demo3 = [[UIViewController alloc]init];
-    //RWTableViewController *demo4 = [[RWTableViewController alloc]init];
     
     demo.view.backgroundColor = [UIColor whiteColor];
     demo2.view.backgroundColor = [UIColor whiteColor];
