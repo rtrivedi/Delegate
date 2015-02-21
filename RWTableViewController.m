@@ -9,6 +9,7 @@
 #import "RWTableViewController.h"
 #import "RWBasicTableViewCell.h"
 #import "UIAlertView+RWBlock.h"
+#import <Parse/Parse.h>
 
 @interface RWTableViewController ()
 
@@ -25,14 +26,6 @@
 
 #pragma mark - Custom accessors
 
-- (NSMutableArray *)objects {
-    
-  if (!_objects) {
-      _objects = [NSMutableArray arrayWithObjects:@"One",@"Two",@"Three",nil];
-  }
-  return _objects;
-}
-
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return 140;
@@ -41,6 +34,8 @@
 #pragma mark - View life cycle
 
 - (void)viewDidLoad {
+
+    [super viewDidLoad];
 
     _objects = [NSMutableArray arrayWithObjects:@"Lorem Ipsum is simply dummy text  Ipsum is simply dummy text of the pr of the printing and typesettin",@"Check out the report and finalize it, please call me when you're done", nil];
     [self.tableView registerClass: [RWBasicTableViewCell class] forCellReuseIdentifier:@"Cell Identifier"];
@@ -53,11 +48,32 @@
     [self.tableView addGestureRecognizer:longPress];
     
     self.tableView.contentInset = UIEdgeInsetsMake(25, 0, 0, 0);
-
-  [super viewDidLoad];
+    
+    [self QueryForTasks];
 
 }
 
+- (void) QueryForTasks{
+    
+    PFUser *user = [PFUser currentUser];
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"Delegate"];
+    
+    [query whereKey:@"sentTo"  equalTo:[PFUser currentUser]]; // "user" must be pointer in the post class (table)
+    [query orderByDescending:@"createdAt"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            for (PFObject *obj in objects) {
+                NSLog(@"object %@",obj);
+            }
+            
+        }
+        if (error) {
+            NSLog(@"Retreive Error");
+        }
+    }];
+}
+     
 #pragma mark - UITableView data source and delegate methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -159,9 +175,6 @@
     s = [s stringByAppendingString:spacing];
     s = [s stringByAppendingString:reminderString];
 
-    //startRange = task.length;
-    //endRange = task.length + reminderString.length;
-
     NSMutableAttributedString *text = [[NSMutableAttributedString alloc] initWithString: s];
     [text addAttribute:NSForegroundColorAttributeName
                  value:customRed
@@ -178,7 +191,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-  [self.objects removeObjectAtIndex:indexPath.row];
+  [self._objects removeObjectAtIndex:indexPath.row];
   [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
@@ -201,9 +214,9 @@
       
       UITextField *textField = [alertView textFieldAtIndex:0];
       NSString *string = [textField.text capitalizedString];
-      [weakself.objects addObject:string];
+      [weakself._objects addObject:string];
       
-      NSUInteger row = [weakself.objects count] - 1;
+      NSUInteger row = [weakself._objects count] - 1;
       NSIndexPath *indexPath = [NSIndexPath indexPathForRow:row inSection:0];
       [weakself.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
     }
@@ -267,7 +280,7 @@
       if (indexPath && ![indexPath isEqual:sourceIndexPath] && (indexPath.section == sourceIndexPath.section)) {
         
         // ... update data source.
-        [self.objects exchangeObjectAtIndex:indexPath.row withObjectAtIndex:sourceIndexPath.row];
+        [self._objects exchangeObjectAtIndex:indexPath.row withObjectAtIndex:sourceIndexPath.row];
         
         // ... move the rows.
         [self.tableView moveRowAtIndexPath:sourceIndexPath toIndexPath:indexPath];
